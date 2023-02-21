@@ -1,0 +1,66 @@
+<table style="background-color: rgb(244, 221, 226); border: solid 2px;">
+    <tr>
+        <td style="width: 20%; background-color: rgb(244, 221, 226);">
+            <table>
+                <tr>
+                    
+                <td> Enter Seed Id </td>
+                <td> <input type="text" #seedId/> </td>
+    </tr>
+    <tr>
+        <td> Enter Seed Name </td>
+        <td> <input type="text" #seedName/> </td>
+    </tr>
+    <tr>
+        <td>typesOfSeeds</td>
+        <td> 
+            <select #typesOfSeeds>
+                <option> Fruit Seed </option>
+                <option> Vegetable Seed </option>
+                <option> Flower Seed </option>
+                <option> Herb Seed </option>
+            </select>
+        </td>
+    </tr>
+
+     <tr>
+        <td> seedsStock </td>
+        <td> <input type="text" #seedsStock> </td>
+     </tr>
+
+     <tr>
+        <td> seedsPerPacket </td>
+        <td> <input type="text" #seedsPerPacket> </td>
+     </tr>
+    <tr>
+        <td> Price </td>
+        <td> <input type="text" #price/> </td>
+    </tr>
+    <tr>
+        <td> Discount </td>
+        <td> <input type="text" #discount/> </td>
+    </tr>
+    <tr>
+        <td> Seed Description </td>
+        <td> <input type="text" #about/> </td>
+    </tr>
+
+    <tr>
+        <td> Image Name </td>
+        <td> <input type="text" #image/> </td>
+    </tr>
+        <tr>
+            <td> Star Rating </td>
+            <td> <input type="text" #starRating/> </td>
+        </tr>
+        <tr>
+        <td> <input type="reset" vaule="Clear All"></td>
+        <td> <input type="button" 
+            (click)="readSeed(seedId.value,seedName.value,typesOfSeeds.value,seedsStock.value,seedsPerPacket.value,image.value,about.value,discount.value,price.value,starRating.value)"
+            value="Add Seed" /> </td>
+        </tr>
+    </table>
+    <br/>
+
+</td>
+
